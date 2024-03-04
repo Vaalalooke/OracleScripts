@@ -1,5 +1,7 @@
 # OracleScripts
 
+A collection of DBA scripts to make life easier.
+
 ## asm
 
 ### DBDGUsage
