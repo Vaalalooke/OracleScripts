@@ -1,123 +1,131 @@
 # OracleScripts
 
-A collection of DBA scripts to make life easier.
+Una colección de scripts para hacer la vida del DBA más sencilla.
 
-## asm
+## asm - ASM (Automatic Storage Management)
+
+Scripts para administrar o monitorear ASM.
 
 ### DBDGUsage
 
-Usage of database Disk Groups, it will ask for db_name
+Uso de los Grupos de Disco de la base, pregunta por db_name
 
 ### DiskGroups
 
-Detail of Disk Groups and usage
+Detalle de Grupos de Disco y su uso
 
 ### StorageUsage
 
-Usage of all storage
+Uso de todo el almacenamiento
 
-## db_scripts
+## db_scripts - Database Scripts
+
+Scripts de monitoreo y uso para la base de datos de Oracle.
 
 ### FlashRecoveryArea
 
-Detail of Flash Recovery Aarea
+Detalle del Área de Recuperación Flash (FRA)
 
 ### InstanceStatus
 
-Status of Instance, startup time, unique name, Data Guard status
+Estado de la Instancia, hora de inicio, nombre único, estado de Data Guard
 
-## prompt
+## prompt - Several prompts for sqlplus
+
+Estos archivos permiten modificar el prompt y mostrar información valiosa.
 
 ### prompt10g
 
-Creates a prompt with user and db name
+Crea un prompt con el usuario y el nombre de la base de datos
 
 ### promptpre10g
 
-Creates a prompt with user and db name, use on db engine previous to 10g
+Crea un prompt con el usuario y el nombre de la base de datos, utilizar en motores previos a 10g
 
-## tablespaces
+## tablespaces - Tablespaces scripts
+
+Estos scripts te permiten encontrar cuanto espacio se ha reservado, libre i si se utilizan de manera adecuada, se puede encontrar el crecimiento y los patrones de uso de la base de datos.  
 
 ### AllWithoutUNDO
 
-Lists all tablespaces but UNDO
+Lista todos los tablespaces excepto el de UNDO
 
 ### AllWithoutUNDOGb
 
-Lists all tablespaces with space in Gb but UNDO
+Lista todos los tablespaces mostrando el espacio en Gb excepto el UNDO
 
 ### DataFilesDetailFromFileName
 
-Requests a file name and lists data files that match
+Solicita un nombre de archivo y lista todos los archivos que coincidan
 
 ### DataFilesDetailFromTSNAME
 
-Requests tablespace name and lists all datafiles detail that belong to it or match
+Solicita un nombre de tablespace y lista todos los archivos de datos y su detalle que le pertenezcan o coincidan con el nombre
 
 ### DataFilesFromTSNAME
 
-Requests tablespace name and lists all datafiles that belong to it or match
+Solicita un nombre de tablespace y lista todos los archivos de datos que le pertenezcan o coincidan con el nombre
 
 ### FilterObjectsInDataFileName
 
-Searchs for objects in a data file name provided by user
+Busca objetos en el nombre del archivo de datos provisto por el usuario
 
 ### FilterTBSP
 
-Filters tablespaces
+Filtra tablespaces
 
 ### FilterTBSPAndDataFileName
 
-Filters tablespaces and shows them and data file names
+Filtra tablespaces y los muestra y sus archivos de datos
 
 ### FilterTBSPFileName
 
-Filters tablespace by file name
+Filtra tablespaces por nombre de archivo
 
 ### FilterTBSPOverPERC
 
-Shows tablespaces that are over PERC given by user
+Muestra los tablespace que exceden PERC (el porcentaje) dado por el usuario
 
 ### SegmentsNextExtentNotFit
 
-Lists segments (objects) which next segment will not fit in free space
+Lista segmentos (objetos) los cuales el siguiente segmento no cabrá en el espacio libre
 
 ### TBSPOver80pc
 
-Lists tablespaces that are over 80%
+Lista tablespaces que están sobre el 80%
 
 ### TBSPOver90pc
 
-Lists tablespaces that are over 90%
+Lista tablespaces que están sobre el 90%
 
 ### TempDetail
 
-Lists detail of temporary tablespace
+Lista el detalle del tablespace temporal
 
 ### TempFiles
 
-Lists detail of temporary data files
+Lista el detalle de los datafiles del tablespace temporal
 
 ### TempFreeSpace
 
-Shows free space in the temporary tablespace
+Muestra el espacio libre en el tablespace temporal
 
 ### TempSegmentPerSession
 
-Shows usage of temporary segments by session
+Muestra el uso de segmentos temporales por sesión
 
 ### TempSegments
 
-Shows temporary segments
+Muestra segmentos temporales
 
 ### TempUsage
 
-Shows usage of temporary tablespace
+Muestra el uso del tablespace temporal
 
 ### TrueTempFreeSpace
 
-Shows true free space in temporary tablespace
+Muestra el espacio libre real en el tablespace temporal
 
 ### UNDO
 
-Shows undo usage
+Muestra el uso del UNDO
